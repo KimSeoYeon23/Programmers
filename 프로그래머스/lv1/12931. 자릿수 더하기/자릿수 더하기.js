@@ -1,11 +1,11 @@
 function solution(n)
 {
     var answer = 0;
-    var m = String(n);
+    var string = n.toString();
+    var mapFn = (arg) => Number(arg);
+    var arr = Array.from(string, mapFn);
     
-    for ( let i = 0; i < m.length; i++) {
-        answer += parseInt(m[i]);
-    }
+    arr.reduce((a, b) => answer = a + b, 0)
 
 
     return parseInt(answer);
