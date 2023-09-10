@@ -1,4 +1,4 @@
 A = int(input())
 
-for i in range(9):
-  print(A, "*", (i+1), "=", A*(i+1))
+for i in range(1, 10):
+  print(A, "*", i, "=", A*i)
