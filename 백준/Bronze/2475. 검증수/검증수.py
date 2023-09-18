@@ -1,8 +1,6 @@
 a = list(map(int, input().split()))
-b = 0
-c = 0
+result = 0
 
 for i in a:
-  b = pow(i, 2)
-  c += b
-print(c % 10)
+  result += i ** 2
+print(result % 10)
