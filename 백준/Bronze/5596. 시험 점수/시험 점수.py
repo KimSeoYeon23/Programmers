@@ -1,16 +1,9 @@
-manse = list(map(int, input().split()))
-mingook = list(map(int, input().split()))
+manse = sum(map(int, input().split()))
+mingook = sum(map(int, input().split()))
 
-manse_total = 0
-mingook_total = 0
-
-for i in range(len(manse)):
-  manse_total += manse[i]
-  mingook_total += mingook[i]
-
-if manse_total > mingook_total:
-  print(manse_total)
-elif manse_total < mingook_total:
-  print(mingook_total)
+if manse > mingook:
+  print(manse)
+elif manse < mingook:
+  print(mingook)
 else:
-  print(mingook_total)
+  print(mingook)
