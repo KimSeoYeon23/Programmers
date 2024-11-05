@@ -1,6 +1,6 @@
 n = int(input())
-result = 0
+answer = 0
+for i in range(1, n+1):
+    answer = answer + i
 
-for i in range(n):
-  result += i+1
-print(result)
+print(answer)
