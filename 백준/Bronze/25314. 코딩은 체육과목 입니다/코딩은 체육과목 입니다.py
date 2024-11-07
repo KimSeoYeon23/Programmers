@@ -1,9 +1,6 @@
-n = int(input())
-long = "long "
-int = "int"
-result = ""
-
-for i in range(n // 4):
-  result += long
-
-print(result + int)
+N = int(input())
+byte = 'int'
+divide = N // 4
+for i in range(divide):
+    byte = 'long ' + byte
+print(byte)
