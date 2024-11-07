@@ -1,7 +1,5 @@
-n = int(input())
-result = ""
-
-for _ in range(n):
-  result += "*"
-  x = result.rjust(n)
-  print(x)
+N = int(input())
+star = ''
+for _ in range(N):
+    star += '*'
+    print(star.rjust(N))
