@@ -1,12 +1,8 @@
 x = int(input())
 n = int(input())
-sum = 0
+result = 0
+for i in range(1, n+1):
+    a, b = map(int, input().split())
+    result = result + (a * b)
 
-for i in range(n):
-  a, b = map(int, input().split())
-  sum += a*b
-
-if sum == x:
-  print('Yes')
-else:
-  print('No')
+print('Yes' if result == x else 'No')
