@@ -1,6 +1,6 @@
-n, x = map(int, input().split())
-a = list(map(int, input().split()))
+N, X = map(int, input().split())
+A = list(map(int, input().split()))
 
-for i in range(len(a)):
-  if x > a[i]:
-    print(a[i])
+for i in A:
+    if X > i:
+        print(i)
