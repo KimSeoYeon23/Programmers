@@ -1,10 +1,10 @@
 # [level 0] 2의 영역 - 181894 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181894) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181894?language=python3) 
 
 ### 성능 요약
 
-메모리: 41.9 MB, 시간: 1.07 ms
+메모리: 12.7 MB, 시간: 1.91 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 08월 19일 16:59:02
+2025년 08월 19일 17:08:56
 
 ### 문제 설명
 
