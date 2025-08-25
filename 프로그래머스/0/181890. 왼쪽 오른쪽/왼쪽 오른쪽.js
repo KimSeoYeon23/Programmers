@@ -1,19 +1,8 @@
 function solution(str_list) {
-    const leftIndex = str_list.findIndex((i) => i === 'l')
-    const rightIndex = str_list.findIndex(i => i === 'r')
-    
-    if (leftIndex === -1 || rightIndex === -1) {
-        if (rightIndex !== -1 && leftIndex === -1) {
-            return str_list.slice(rightIndex+1)
-        } else if (leftIndex !== -1 && rightIndex === -1) {
-            return str_list.slice(0, leftIndex)
-        }
-        return []
+    for (let i=0; i < str_list.length; i++) {
+        if (str_list[i] === 'l') return str_list.slice(0, i)
+        if (str_list[i] === 'r') return str_list.slice(i+1)
     }
     
-    if (leftIndex !== -1 && leftIndex < rightIndex) {
-        return str_list.slice(0, leftIndex)
-    } else if (rightIndex !== -1 && rightIndex < leftIndex) {
-        return str_list.slice(rightIndex+1)
-    }
+    return []
 }
