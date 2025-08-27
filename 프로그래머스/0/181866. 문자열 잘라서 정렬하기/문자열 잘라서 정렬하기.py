@@ -1,5 +1,2 @@
-def solution(myString):
-    answer = []
-    answer = list(filter(None, myString.split("x")))
-    
-    return sorted(answer)
+def solution(myString):    
+    return sorted([v for v in myString.split("x") if v])
